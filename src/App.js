@@ -4,8 +4,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import { darkTheme } from './themes';
 import GlobalStyles from './GlobalStyles';
 import Home from './landing/Home';
-import Projects from './landing/components/Projects';
-import Contact from './landing/components/Contact';
 
 const AppWrapper = styled.div`
   background-color: ${props => props.theme.backgroundColor};
@@ -21,10 +19,7 @@ function App() {
           <GlobalStyles />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
-
         </AppWrapper>
       </Router>
     </ThemeProvider>

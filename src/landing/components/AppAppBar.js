@@ -1,6 +1,5 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -56,24 +55,18 @@ function AppAppBar({ mode, toggleColorMode }) {
         <Container maxWidth="lg">
           <Toolbar
             variant="regular"
-            sx={(theme) => ({
+            sx={() => ({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
               flexShrink: 0,
               borderRadius: '999px',
-              bgcolor:
-                theme.palette.mode === 'light'
-                  ? 'rgba(255, 255, 255, 0.4)'
-                  : 'rgba(0, 0, 0, 0.4)',
+              bgcolor:'rgba(0, 0, 0, 0.4)',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               border: '1px solid',
               borderColor: 'divider',
-              boxShadow:
-                theme.palette.mode === 'light'
-                  ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
+              boxShadow: '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
             <Box
@@ -93,7 +86,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               />
                <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => scrollToSection('hero')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -110,7 +103,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               }}
             >
                   <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => scrollToSection('hero')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -118,7 +111,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
+                  onClick={() => scrollToSection('about')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -126,7 +119,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('highlights')}
+                  onClick={() => scrollToSection('projects')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -134,7 +127,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('faq')}
+                  onClick={() => scrollToSection('skills')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -142,7 +135,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('pricing')}
+                  onClick={() => scrollToSection('contact')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
@@ -180,17 +173,17 @@ function AppAppBar({ mode, toggleColorMode }) {
                   >
                     <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
+                  <MenuItem onClick={() => scrollToSection('hero')}>
                     HOME
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
+                  <MenuItem onClick={() => scrollToSection('about')}>
                     ABOUT
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
+                  <MenuItem onClick={() => scrollToSection('projects')}>
                     PROJECTS
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>SKILLS</MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
+                  <MenuItem onClick={() => scrollToSection('skills')}>SKILLS</MenuItem>
+                  <MenuItem onClick={() => scrollToSection('contact')}>
                     CONTACT
                   </MenuItem>
                   <Divider />
@@ -203,10 +196,5 @@ function AppAppBar({ mode, toggleColorMode }) {
     </div>
   );
 }
-
-AppAppBar.propTypes = {
-  mode: PropTypes.oneOf(['dark', 'light']).isRequired,
-  toggleColorMode: PropTypes.func.isRequired,
-};
 
 export default AppAppBar;

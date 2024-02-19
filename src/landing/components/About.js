@@ -2,23 +2,20 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Masonry from '@mui/lab/Masonry';
 import { useMediaQuery } from '@mui/material';
-import { useTheme } from '@mui/system';
 
 
-export default function Testimonials() {
-  const theme = useTheme();
+export default function About() {
   const isSmallScreen = useMediaQuery('(max-width:600px)');
   const columns = isSmallScreen ? 1 : 3;
 
   return (
     <Container
-      id="testimonials"
+      id="about"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
@@ -42,34 +39,8 @@ export default function Testimonials() {
           Here you will find more information about me .
         </Typography>
       </Box>
-      {/* <Masonry columns={columns} spacing={2}>
-        {userTestimonials.map((testimonial, index) => (
-          <Card key={index} sx={{ p: 1 }}>
-              <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                pr: 2,
-              }}
-            >
-              <CardHeader
-                title={testimonial.name}
-              />
-            </Box>
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-              <TestimonialComponent  testimonial={testimonial.testimonial} />
-
-              </Typography>
-
-            </CardContent>
-          
-          </Card>
-        ))}
-      </Masonry> */}
       <Masonry columns={columns} spacing={2} style={{ justifyItems: "center", alignContent: "center" }}>
-        <Card sx={{ p: 1 }}>
+        <Card sx={{ p: 1 ,background: 'transparent',  backgroundColor: 'action.selected',}}>
           <Box
             sx={{
               display: 'flex',
@@ -118,7 +89,7 @@ export default function Testimonials() {
           </CardContent>
 
         </Card>
-        <Card sx={{ p: 1 }}>
+        <Card sx={{ p: 1, background: 'transparent', backgroundColor: 'action.selected',}}>
           <Box
             sx={{
               display: 'flex',

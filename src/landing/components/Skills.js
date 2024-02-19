@@ -62,12 +62,12 @@ const items = [
   },
 
 ];
-export default function FAQ() {
+export default function Skills() {
 
 
   return (
     <>
-      <Container id="faq" sx={{ py: { xs: 8, sm: 16 } }}>
+      <Container id="skills" sx={{ py: { xs: 8, sm: 16 } }}>
 
         <Grid item xs={12} md={6} textAlign={"center"}>
           <div>

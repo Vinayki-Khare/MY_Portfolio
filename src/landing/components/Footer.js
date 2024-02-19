@@ -7,27 +7,42 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-
-const logoStyle = {
-  width: '140px',
-  height: 'auto',
-};
+import EmailIcon from '@mui/icons-material/Email'
+import Resume from '../../assets/pdf/Vinayki_khare_resume.pdf';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {'Copyright © '}
-      <Link href="https://mui.com/">Made By Vinayki Khare&nbsp;</Link>
+      <Link href="#">Made By Vinayki Khare&nbsp;</Link>
       {new Date().getFullYear()}
     </Typography>
   );
 }
 
 export default function Footer() {
+  const handleDownload = () => {
+    // Create a link element
+    const link = document.createElement('a');
+
+    // Set the href attribute to the imported PDF file
+    link.href = Resume;
+
+    // Set the download attribute with the desired file name
+    link.download = 'Vinayki_khare_Resume.pdf';
+
+    // Append the link to the document
+    document.body.appendChild(link);
+
+    // Trigger a click event on the link to start the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
   return (
     <Container
-      id="pricing"
+      id="contact"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -47,11 +62,7 @@ export default function Footer() {
         }}
       >
         <div>
-          <Link
-            color="text.secondary"
-            href="../../assets/pdf/Vinayki_khare_resume.pdf" // Provide the correct path to your resume file
-            download="Vinayki_khare_resume.pdf" // Specify the desired file name
-          >
+          <Link variant="pointer" onClick={handleDownload}>
             Download My Resume
           </Link>
           <Copyright />
