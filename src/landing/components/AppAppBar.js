@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
-import ToggleColorMode from './ToggleColorMode';
 
 const logoStyle = {
   width: '4%',
@@ -20,7 +19,7 @@ const logoStyle = {
   borderRadius: 50,
 };
 
-function AppAppBar({ mode, toggleColorMode }) {
+function AppAppBar() {
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -171,7 +170,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                       flexGrow: 1,
                     }}
                   >
-                    <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
                   </Box>
                   <MenuItem onClick={() => scrollToSection('hero')}>
                     HOME
