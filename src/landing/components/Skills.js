@@ -6,60 +6,85 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 const items = [
   {
-    title: 'React Native',
+    title: 'Framework & Library',
     description:
-      'React Native is a JavaScript library that lets you create native apps for Android, iOS, and more using React primitives and native code. '
+      'React Native, ReactJs, jQuery, Bootstrap & Tailwind '
   },
   {
-    title: 'React JS',
+    title: 'Languages',
     description:
-      'React JS is a free and open-source front-end JavaScript library for building user interfaces based on components. ',
+      ' JavaScript (Including Data Structures and Algorithms), Solidity,  HTML, CSS  and Python '
   },
   {
-    title: 'DSA',
+    title: 'Database',
     description:
-      'A data structure is a particular way data is arranged so it can be saved in memory and retrieved for later use. &  an Algorithm is a set of steps for solving a known problem'
+      ' MySQL & MongoDB '
   },
   {
-    title: 'JavaScript',
+    title: 'Tools',
     description:
-      'JavaScript is a scripting or programming language that allows you to implement complex features on web pages'
+      'GitHub, VSCode & Remix'
   },
   {
-    title: 'HTML',
-    description:
-      'HTML stands for Hyper Text Markup Language. it is the standard markup language for creating Web pages.it describes the structure of a Web page'
-  },
-  {
-    title: 'CSS',
-    description:
-      'CSS stands for Cascading Style Sheets. CSS allows you to create great-looking web pages'
-  },
-  {
-    title: 'Bootstrap',
-    description:
-      'Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.'
-  },
-  {
-    title: 'Tailwind',
-    description:
-      'Tailwind CSS is a framework that lets you build any design, directly in your HTML, with classes .'
-  },
-  {
-    title: 'Python',
-    description:
-      'Python is a language that can be used for web development, software development, mathematics, system scripting and more. '
-  },
-  {
-    title: 'MySQL',
-    description:
-      'MySQL is an open-source relational database management system (RDBMS)'
-  },
-   {
     title: 'Soft Skill',
     description:
-      'I possess soft skills such as decision-making, presentation, and leadership.'
+      ' Presentation, Decision-Making & Leadership '
   },
+  // {
+  //   title: 'React Native',
+  //   description:
+  //     'React Native is a JavaScript library that lets you create native apps for Android, iOS, and more using React primitives and native code. '
+  // },
+  // {
+  //   title: 'React JS',
+  //   description:
+  //     'React JS is a free and open-source front-end JavaScript library for building user interfaces based on components. ',
+  // },
+  // {
+  //   title: 'DSA',
+  //   description:
+  //     'A data structure is a particular way data is arranged so it can be saved in memory and retrieved for later use. &  an Algorithm is a set of steps for solving a known problem'
+  // },
+  // {
+  //   title: 'JavaScript',
+  //   description:
+  //     'JavaScript is a scripting or programming language that allows you to implement complex features on web pages'
+  // },
+  // {
+  //   title: 'HTML',
+  //   description:
+  //     'HTML stands for Hyper Text Markup Language. it is the standard markup language for creating Web pages.it describes the structure of a Web page'
+  // },
+  // {
+  //   title: 'CSS',
+  //   description:
+  //     'CSS stands for Cascading Style Sheets. CSS allows you to create great-looking web pages'
+  // },
+  // {
+  //   title: 'Bootstrap',
+  //   description:
+  //     'Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.'
+  // },
+  // {
+  //   title: 'Tailwind',
+  //   description:
+  //     'Tailwind CSS is a framework that lets you build any design, directly in your HTML, with classes .'
+  // },
+  // {
+  //   title: 'Python',
+  //   description:
+  //     'Python is a language that can be used for web development, software development, mathematics, system scripting and more. '
+  // },
+  // {
+  //   title: 'MySQL',
+  //   description:
+  //     'MySQL is an open-source relational database management system (RDBMS)'
+  // },
+  //  {
+  //   title: 'Soft Skill',
+  //   description:
+  //     'I possess soft skills such as decision-making, presentation, and leadership.'
+  // },
 
 ];
 export default function Skills() {
