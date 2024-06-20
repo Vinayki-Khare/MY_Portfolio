@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email'
-import Resume from '../../assets/pdf/Vinayki_khare_resume.pdf';
+import Resume from '../../assets/pdf/Resume.pdf';
 
 function Copyright() {
   return (
@@ -78,7 +78,7 @@ export default function Footer() {
         >
           <IconButton
             color="inherit"
-            href="https://github.com/vinayki-khare-7"
+            href="https://github.com/Vinayki-Khare"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
@@ -86,7 +86,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="mailto:kharevinayki7@gmail.com"
+            href="mailto:kharevinayki@gmail.com"
             aria-label="Email"
             sx={{ alignSelf: 'center' }}
           >
@@ -94,7 +94,7 @@ export default function Footer() {
           </IconButton>
           <IconButton
             color="inherit"
-            href="https://www.linkedin.com/in/vinayki-khare-a12751203/"
+            href="https://www.linkedin.com/in/vinayki-khare/"
             aria-label="LinkedIn"
             sx={{ alignSelf: 'center' }}
           >
