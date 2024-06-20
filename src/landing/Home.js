@@ -11,22 +11,16 @@ import Skills from './components/Skills';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
 
-const defaultTheme = createTheme({});
 
 export default function LandingPage() {
-  const [mode, setMode] = React.useState('dark');
-  const [showCustomTheme, setShowCustomTheme] = React.useState(true);
-  const LPtheme = createTheme(getLPTheme(mode));
+  const LPtheme = createTheme(getLPTheme('dark'));
 
-  const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
 
 
   return (
-    <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
+    <ThemeProvider theme={LPtheme}>
       <CssBaseline />
-      <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <AppAppBar />
       <Hero />
       <Box sx={{ bgcolor: 'background.default' }}>
         <Divider />
