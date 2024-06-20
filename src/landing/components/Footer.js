@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email'
-import Resume from '../../assets/pdf/Resume.pdf';
+import Resume from '../../assets/pdf/Vinayki_khare_resume.pdf';
 
 function Copyright() {
   return (
