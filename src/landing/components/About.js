@@ -40,7 +40,76 @@ export default function About() {
         </Typography>
       </Box>
       <Masonry columns={columns} spacing={2} style={{ justifyItems: "center", alignContent: "center" }}>
-        <Card sx={{ p: 1 ,background: 'transparent',  backgroundColor: 'action.selected',}}>
+        <Card sx={{ p: 1, background: 'transparent', backgroundColor: 'action.selected', }}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              pr: 2,
+            }}
+          >
+            <CardHeader
+              title={"Experience"}
+
+            />
+          </Box>
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              TecNobelite Technologies , Remote —
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Frontend Developer ( Feb 2023 - Till Date )
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              &nbsp;
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Leading frontend projects in a collaborative team environment.
+              Spearheading React Native & React JS projects within a team-focused environment.
+              Actively involved in the creation of cutting-edge mobile & web applications.
+              Delivering impactful solutions across diverse industries.
+            </Typography>
+          </CardContent>
+
+        </Card>
+        <Card sx={{ p: 1, background: 'transparent', backgroundColor: 'action.selected', }}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              pr: 2,
+            }}
+          >
+            <CardHeader
+              title={"Experience"}
+
+            />
+          </Box>
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              Metaversity Technologies, Noida —
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              React Native Developer ( Nov 2022 - Dec 2023 )
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              &nbsp;
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Architecting high-quality applications with clean code.
+              Translating designs to pixel-perfect interfaces.
+              Diagnosing and resolving bugs for native-like performance.
+              Actively involved in the creation of cutting-edge mobile
+              applications.
+              Actively involved in the creation of cutting-edge mobile
+              applications.
+            </Typography>
+          </CardContent>
+
+        </Card>
+        <Card sx={{ p: 1, background: 'transparent', backgroundColor: 'action.selected', }}>
           <Box
             sx={{
               display: 'flex',
@@ -89,42 +158,8 @@ export default function About() {
           </CardContent>
 
         </Card>
-        <Card sx={{ p: 1, background: 'transparent', backgroundColor: 'action.selected',}}>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              pr: 2,
-            }}
-          >
-            <CardHeader
-              title={"Experience"}
 
-            />
-          </Box>
-          <CardContent>
-            <Typography variant="body2" color="text.secondary">
-              Metaversity Technologies, Noida — 
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            React Native Developer ( Nov 2022 - Dec 2023 )
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            &nbsp;
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Architecting high-quality applications with clean code.
-              Translating designs to pixel-perfect interfaces.
-              Diagnosing and resolving bugs for native-like performance.
-              Actively involved in the creation of cutting-edge mobile
-              applications.
-              Actively involved in the creation of cutting-edge mobile
-              applications.
-            </Typography>
-          </CardContent>
 
-        </Card>
       </Masonry>
     </Container>
   );
