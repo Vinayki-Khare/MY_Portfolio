@@ -8,6 +8,10 @@ import Typography from '@mui/material/Typography';
 import AccountBalanceWallet from '@mui/icons-material/AccountBalanceWallet';
 import LeaderboardTwoTone from '@mui/icons-material/LeaderboardTwoTone';
 import Agriculture from '@mui/icons-material/Agriculture';
+import Casino from '@mui/icons-material/Casino';
+import Wallet from '@mui/icons-material/Wallet';
+import ViewModule from '@mui/icons-material/ViewModule';
+import RestaurantMenu from '@mui/icons-material/RestaurantMenu';
 
 const items = [
   {
@@ -43,6 +47,50 @@ const items = [
       '      and those just starting out. Discover Apna Kisan, offering carefully curated' +
       '   products that cater to the diverse requirements of the farming community.',
   },
+  {
+    icon: <ViewModule />,
+    title: 'Sui Stakes',
+    description:
+      'Suistakes, a decentralized gaming platform powered by SUI blockchain technology.' +
+      '       Committed to fostering community engagement and driving innovation, ' +
+      '      Suistakes offers a transformative gaming experience unlike any other. ' +
+      '      By empowering users and game developers alike, we are' +
+      '     reshaping the gaming landscape on a global scale.'
+  },
+  {
+    icon: <Wallet />,
+    title: 'Laxce (ICO & DEX)',
+    description:
+      'LAXCE Blockchain Ecosystem,  addresses traditional Blockchain ' +
+      '      with an eco-conscious Proof-of-Authority consensus model, focusing ' +
+      '      on accessibility and scalability while minimizing energy usage. ' +
+      '      Prioritizing user financial freedom and security, it progresses ' +
+      '      challenges through stages from establishing an online presence to offering ' +
+      '      a comprehensive DeFi ecosystem. LAXCE aims to revolutionize decentralized ' +
+      '   finance through technology and inclusivity.',
+  },
+  {
+    icon: <Casino />,
+    title: 'Meta Casino',
+    description:
+      'Meta Casino aims to revolutionize the online gaming landscape by leveraging the ' +
+      '      unique capabilities of blockchain technology. Integrating HTML5 casino games' +
+      '      seamlessly with the Sui Blockchain, we prioritizes transparency, security,' +
+      '      it progresses from establishing an online gaming presence to potentially offering a' +
+      '       and decentralization, comprehensive decentralized finance (DeFi) ecosystem.'
+  },
+  // {
+  //   icon: <RestaurantMenu />,
+  //   title: 'Snip Kitchen',
+  //   description:
+  //     'Apna Kisan, the revolutionary agri-centric e-commerce app, is committed to' +
+  //     '      empowering farmers. Blurring the lines between B2B and B2C, Apna Kisan' +
+  //     '      provides a holistic platform for farmers to seamlessly purchase and rate' +
+  //     '      agricultural essentials. Prioritizing user-friendly interfaces, the app' +
+  //     '      promises a hassle-free shopping experience for both experienced farmers' +
+  //     '      and those just starting out. Discover Apna Kisan, offering carefully curated' +
+  //     '   products that cater to the diverse requirements of the farming community.',
+  // },
 ];
 
 export default function Projects() {
