@@ -61,13 +61,23 @@ const items = [
     icon: <Wallet />,
     title: 'Laxce (ICO & DEX)',
     description:
-      'LAXCE Blockchain Ecosystem,  addresses traditional Blockchain ' +
-      '      with an eco-conscious Proof-of-Authority consensus model, focusing ' +
-      '      on accessibility and scalability while minimizing energy usage. ' +
-      '      Prioritizing user financial freedom and security, it progresses ' +
-      '      challenges through stages from establishing an online presence to offering ' +
-      '      a comprehensive DeFi ecosystem. LAXCE aims to revolutionize decentralized ' +
-      '   finance through technology and inclusivity.',
+    'LAXCE is a web3 application that facilitates decentralized exchanges.'+
+      ' It allows users to trade cryptocurrencies and other digital assets '+
+      'in a peer-to-peer and trustless manner. LAXCE leverages blockchain technology '+
+      'to provide secure, transparent, and censorship-resistant trading.'+
+      'LAxce consist NFT , DEX, ICO & IDO Modle',
+'NFT are assets like a piece of art, digital content, or video that have been tokenized via a blockchain.'+
+'DEX is a peer-to-peer marketplace where transactions occur directly between crypto traders.'+
+'ICO is a fundraising mechanism in the cryptocurrency industry, Companies aiming to gather resources for the creation of a new coin, application, or service can launch an ICO.'+
+'IDO is a new fundraising model that allows cryptocurrency projects to launch their native token or coin through a decentralized liquidity exchange.',
+
+      // 'LAXCE Blockchain Ecosystem,  addresses traditional Blockchain ' +
+      // '      with an eco-conscious Proof-of-Authority consensus model, focusing ' +
+      // '      on accessibility and scalability while minimizing energy usage. ' +
+      // '      Prioritizing user financial freedom and security, it progresses ' +
+      // '      challenges through stages from establishing an online presence to offering ' +
+      // '      a comprehensive DeFi ecosystem. LAXCE aims to revolutionize decentralized ' +
+      // '   finance through technology and inclusivity.',
   },
   {
     icon: <Casino />,
